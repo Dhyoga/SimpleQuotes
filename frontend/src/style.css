@@ -1,0 +1,180 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  transition: 0.2s linear;
+}
+
+body {
+  margin: 0 24px;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Layout */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 30px;
+}
+
+.my-masonry-grid_column > div:hover {
+  transform: translateY(-12px);
+  transition: transform 0.3s ease;
+}
+
+/* Quotes */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 36px;
+  font-family: sans-serif;
+}
+.header:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+a {
+  text-decoration: none;
+}
+.text {
+  color: white;
+}
+.text:hover {
+  cursor: pointer;
+}
+.quote-text {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.quote-text.small {
+  font-size: 28px;
+}
+
+.quote-text.medium {
+  font-size: 36px;
+}
+
+.quote-text.large {
+  font-size: 48px;
+}
+
+.quote-author {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+/* Modal CSS */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  outline-offset: 2px;
+  cursor: pointer;
+}
+/* Header button */
+button {
+  text-decoration: none;
+  padding: 8px 24px;
+  font-size: 16px;
+  margin: 16px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: initial;
+}
+/* form */
+form {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal:active {
+  transition: 0s;
+  background-color: inherit;
+}
+
+.modal-content textarea,
+.modal-content input[type="text"] {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  filter: contrast(120%);
+}
+
+/* Search Bar */
+.search-bar{
+  /* margin-bottom: 32px; */
+  font-size: 16px;
+  padding: 8px;
+  border: none; 
+}
+
+.search-bar:focus{
+  outline: none;
+}
