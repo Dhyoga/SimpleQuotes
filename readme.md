@@ -1,12 +1,14 @@
-nodemon --experimental-specifier-resolution=node --loader esm index.js",
-nodemon index.js
+WebApps ini terbagi menjadi 2 service yaitu frontend dan backend, maka dari itu dibutuhkan 2 terminal.
 
-Langkah menjalankan proyek
 [ Terminal 1 ]
+```
 $ cd backend
 $ docker-compose up -d
 $ npm run dev
+```
 
 [ Terminal 2 ]
+```
 $ cd frontend
 $ npm run dev
+```
